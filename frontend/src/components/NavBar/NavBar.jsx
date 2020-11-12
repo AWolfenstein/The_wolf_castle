@@ -15,7 +15,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import MoreIcon from "@material-ui/icons/MoreVert";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
   },
@@ -30,14 +30,18 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbar:{
     backgroundColor:  "#040410d6" 
+  },
+  deletePrimary:{
+    backgroundColor: "rgba(0, 0, 0, 0.1)"
   }
+
 }));
 
 const NavBar = () => {
   const classes = useStyles();
   const body = (
     <div  className={classes.root} >
-      <AppBar position="static" >
+      <AppBar position="static" classes={{colorPrimary: classes.deletePrimary}}>
         <Toolbar classes={{root: classes.toolbar}}>
         <Typography variant="h6" edge="start" className={classes.leftTitle} >
         The Wolf Castle

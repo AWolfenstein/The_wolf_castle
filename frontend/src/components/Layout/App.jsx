@@ -4,21 +4,25 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Grid } from "@material-ui/core";
 import NotFound from "../NotFound/NotFound";
 import NavBar from "../NavBar/NavBar";
+import AdsBlock from "../AdsBlock/AdsBlock";
 function App() {
   return (
     <div className="App">
       <Grid container>
-        <Grid item xs={12}>
+        <Grid item xs={12} md={12} sm={12}>
           <NavBar></NavBar>
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <Router>
+        <Router>
+          <Grid item xs={12} md={12} sm={12} >
+            <AdsBlock></AdsBlock>
+          </Grid>
+          <Grid item xs={12} md={12} sm={12}>
             <Switch>
               <Route exact path="/"></Route>
               <Route component={NotFound} />
             </Switch>
-          </Router>
-        </Grid>
+          </Grid>
+        </Router>
       </Grid>
     </div>
   );
