@@ -2,22 +2,23 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container, Typography } from "@material-ui/core";
 const useStyles = makeStyles(() => ({
-  container: {
-
+  gCont: {
+    marginTop:"1%",
+    marginBottom: "1%",
     height: "100px",
     backgroundColor: "#181834cf",
-    borderRadius: " 0px 0px 20px 20px",
-    boxShadow: "1px 6px 15px 1px rgba(250,127,250,0.8);",
+    borderRadius: " 10px ",
+    boxShadow: "1px 6px 15px 1px rgba(59,12,236,0.8);",
   },
 }));
-const AdsBlock = () => {
+const GlobalContainer = () => {
   const classes = useStyles();
   const body = (
-    <Container children className={classes.container}>
-      fdesf
+    <Container children className={classes.gCont}  >
+
     </Container>
   );
   return body;
 };
 
-export default AdsBlock;
+export default GlobalContainer;

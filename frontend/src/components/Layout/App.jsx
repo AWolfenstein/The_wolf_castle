@@ -5,6 +5,8 @@ import { Grid } from "@material-ui/core";
 import NotFound from "../NotFound/NotFound";
 import NavBar from "../NavBar/NavBar";
 import AdsBlock from "../AdsBlock/AdsBlock";
+import GlobalContainer from "../GlobalContainer/GlobalContainer";
+import Footer from "../Footer/Footer"
 function App() {
   return (
     <div className="App">
@@ -13,17 +15,24 @@ function App() {
           <NavBar></NavBar>
         </Grid>
         <Router>
-          <Grid item xs={12} md={12} sm={12}>
-            <AdsBlock></AdsBlock>
-          </Grid>
-          <Grid item xs={12} md={12} sm={12}>
-            <Switch>
-              <Route exact path="/"></Route>
-              <Route component={NotFound} />
-            </Switch>
-          </Grid>
+          <Switch>
+            <Route exact path="/">
+              <Grid container item xs={12} md={12} sm={12}>
+                <AdsBlock></AdsBlock>
+              </Grid>
+              <Grid item xs={12} md={12} sm={12}>
+                <GlobalContainer></GlobalContainer>
+              </Grid>
+            </Route>
+            <Route component={NotFound} />
+          </Switch>
         </Router>
+        <Grid item xs={12} md={12} sm={12}>
+      
+        </Grid>
+        
       </Grid>
+      <Footer></Footer>
     </div>
   );
 }
