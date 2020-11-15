@@ -1,7 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Container } from "@material-ui/core";
+import { Container, Grid, Paper } from "@material-ui/core";
 import Breadcrumb from "../Breadcrumb/Breadcrumb";
+import LeftHomeBlock from "../LeftHomeBlock/LeftHomeBlock";
+import RightHomeBlock from "../RightHomeBlock/RightHomeBlock";
+import CategoryTabs from "../CategoryTabs/CategoryTabs";
 const useStyles = makeStyles((theme) => ({
   gCont: {
     marginTop: "1%",
@@ -14,13 +17,29 @@ const useStyles = makeStyles((theme) => ({
   deletePrimary: {
     backgroundColor: "rgba(0, 0, 0, 0.1)",
   },
+  centerContainer:{
+    marginTop: "1%",
+  },
 }));
 const GlobalContainer = () => {
   const classes = useStyles();
   const body = (
     <Container children className={classes.gCont}>
-      <div style={{height:"1px"}}></div>
+      <div style={{ height: "1px" }}></div>
       <Breadcrumb></Breadcrumb>
+      <Grid item xs={12}>
+        <Grid container className={classes.centerContainer} justify="center"  spacing={2}   >
+          <Grid item>
+            <LeftHomeBlock></LeftHomeBlock>
+          </Grid>
+          <Grid item>
+            <CategoryTabs></CategoryTabs>
+          </Grid>
+          <Grid item>
+            <RightHomeBlock></RightHomeBlock>
+          </Grid>
+        </Grid>
+        </Grid>
     
     </Container>
   );
