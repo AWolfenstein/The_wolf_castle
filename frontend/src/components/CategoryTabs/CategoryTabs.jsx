@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { makeStyles } from "@material-ui/core/styles";
+import { withNamespaces } from 'react-i18next';
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
@@ -27,12 +28,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgba(0, 0, 0, 0.1)",
   },
   tabStyle: {
-  fontFamily: "Determination2",
-  
+    fontFamily: "Determination2",
     color: "#9686eaad",
     "&:hover": {
       color: "#e504e8",
-     
     },
     ' &[aria-selected="true"]': {
       color: "#f50057",
@@ -74,7 +73,7 @@ function a11yProps(index) {
   };
 }
 
-const CategoryTabs = () => {
+const CategoryTabs = ({ t }) => {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -94,34 +93,34 @@ const CategoryTabs = () => {
             color: "white",
             backgroundColor: "#000000a6",
             borderRadius: "6px 6px 0px 0px",
-            boxShadow:"0px 10px 13px -0px #000000"
+            boxShadow: "0px 10px 13px -0px #000000",
           }}>
           <Tab
-            label="General"
+            label={t('general')}
             className={classes.tabStyle}
             icon={<HomeIcon />}
             {...a11yProps(0)}
           />
           <Tab
-            label="Tech"
+            label={t('tech')}
             className={classes.tabStyle}
             icon={<ImportantDevicesIcon />}
             {...a11yProps(1)}
           />
           <Tab
-            label="Game"
+            label={t('games')}
             className={classes.tabStyle}
             icon={<SportsEsportsIcon />}
             {...a11yProps(2)}
           />
           <Tab
-            label="Tutorials"
+            label={t('tutorials')}
             className={classes.tabStyle}
             icon={<HelpIcon />}
             {...a11yProps(3)}
           />
           <Tab
-            label="Marketplace"
+            label={t('marketplace')}
             className={classes.tabStyle}
             icon={<ShoppingBasket />}
             {...a11yProps(4)}
@@ -164,4 +163,4 @@ const CategoryTabs = () => {
     </div>
   );
 };
-export default CategoryTabs;
+export default withNamespaces()(CategoryTabs);

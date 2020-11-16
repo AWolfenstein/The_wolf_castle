@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import { withNamespaces } from 'react-i18next';
 import { Paper, Breadcrumbs, Link } from "@material-ui/core";
 import HomeIcon from "@material-ui/icons/Home";
 const useStyles = makeStyles((theme) => ({
@@ -23,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Breadcrumb = () => {
+const Breadcrumb = ({ t }) => {
   const classes = useStyles();
 
   const body = (
@@ -35,7 +36,7 @@ const Breadcrumb = () => {
       <Breadcrumbs aria-label="breadcrumb" className={classes.breadStyle}>
         <Link color="inherit" href="/" className={classes.link}>
           <HomeIcon className={classes.icon} />
-          Home
+          {t('home')}
         </Link>
       </Breadcrumbs>
     </Paper>
@@ -43,4 +44,4 @@ const Breadcrumb = () => {
   return body;
 };
 
-export default Breadcrumb;
+export default withNamespaces()(Breadcrumb);

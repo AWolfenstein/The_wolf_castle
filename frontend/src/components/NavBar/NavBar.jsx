@@ -3,10 +3,12 @@ import {
   AppBar,
   Toolbar,
   Typography,
+  Link,
   Button,
   IconButton,
   Badge,
 } from "@material-ui/core";
+import { withNamespaces } from 'react-i18next';
 import { makeStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
@@ -40,7 +42,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const NavBar = () => {
+const NavBar = ({ t }) => {
   const classes = useStyles();
   const body = (
     <div className={classes.root}>
@@ -48,12 +50,12 @@ const NavBar = () => {
         position="static"
         classes={{ colorPrimary: classes.deletePrimary }}>
         <Toolbar classes={{ root: classes.toolbar }}>
-          <Typography variant="h6" edge="start" className={classes.leftTitle}>
-            The Wolf Castle
-          </Typography>
+          <Link variant="h6" edge="start" href="/" className={classes.leftTitle}>
+            {t('theWolfCastle')}
+          </Link>
           <Typography variant="h6" className={classes.title}></Typography>
           <div className={classes.rightButtons}>
-            <Button color="inherit">Login</Button>
+            <Button color="inherit">{t('login')}</Button>
             <IconButton aria-label="show mails" color="inherit">
               <Badge badgeContent={4} color="secondary">
                 <MailIcon />
@@ -81,4 +83,4 @@ const NavBar = () => {
   return body;
 };
 
-export default NavBar;
+export default withNamespaces()(NavBar);
