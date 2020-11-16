@@ -6,9 +6,9 @@ const useStyles = makeStyles((theme) => ({
   paperBackground: {
     backgroundColor: "#00000052",
  
-    boxShadow: "0px 0px 16px 2px rgba(12 ,208, 90 , 43%);",
+    boxShadow: "0px 0px 16px 2px #1beef370",
     height: "600px",
-    width: "200px",
+    width: "100%",
   },
 }));
 

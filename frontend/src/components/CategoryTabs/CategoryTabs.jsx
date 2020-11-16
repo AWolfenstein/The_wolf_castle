@@ -1,33 +1,57 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import HomeIcon from '@material-ui/icons/Home';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import PersonPinIcon from '@material-ui/icons/PersonPin';
-import HelpIcon from '@material-ui/icons/Help';
-import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
-import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
-import ThumbDown from '@material-ui/icons/ThumbDown';
-import ThumbUp from '@material-ui/icons/ThumbUp';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
-import pink from '@material-ui/core/colors/pink';
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import HomeIcon from "@material-ui/icons/Home";
+import HelpIcon from "@material-ui/icons/Help";
+import ShoppingBasket from "@material-ui/icons/ShoppingBasket";
+import SportsEsportsIcon from "@material-ui/icons/SportsEsports";
+import ThumbDown from "@material-ui/icons/ThumbDown";
+import ThumbUp from "@material-ui/icons/ThumbUp";
+import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
+import ImportantDevicesIcon from "@material-ui/icons/ImportantDevices";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    height: "600px",
+    width: "100%",
+    backgroundColor: "#270e3836",
+    boxShadow: "0px 0px 16px 2px #f213ff96",
+    borderRadius: "5px",
+  },
+  deletePrimary: {
+    backgroundColor: "rgba(0, 0, 0, 0.1)",
+  },
+  tabStyle: {
+  fontFamily: "Determination2",
+  
+    color: "#9686eaad",
+    "&:hover": {
+      color: "#e504e8",
+     
+    },
+    ' &[aria-selected="true"]': {
+      color: "#f50057",
+    },
+    "&:focus": {
+      color: "#f50057",
+    },
+  },
+}));
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-
+  const classes = useStyles();
   return (
     <div
       role="tabpanel"
       hidden={value !== index}
       id={`scrollable-force-tabpanel-${index}`}
       aria-labelledby={`scrollable-force-tab-${index}`}
-      {...other}
-    >
+      {...other}>
       {value === index && (
         <Box p={3}>
           <Typography>{children}</Typography>
@@ -46,31 +70,18 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `scrollable-force-tab-${index}`,
-    'aria-controls': `scrollable-force-tabpanel-${index}`,
+    "aria-controls": `scrollable-force-tabpanel-${index}`,
   };
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-   height:"600px",
-    width: '800px',
-    backgroundColor: "#000000a6" ,
-    boxShadow: "0px 0px 16px 2px hsl(0deg 89% 43% / 60%)",
-    borderRadius: "5px",
-  },
-  deletePrimary:{
-    backgroundColor: "rgba(0, 0, 0, 0.1)"
-  }
-}));
-
-const CategoryTabs =()=> {
+const CategoryTabs = () => {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  const color = pink[500];
+
   return (
     <div className={classes.root}>
       <AppBar position="static" color="transparent">
@@ -79,17 +90,54 @@ const CategoryTabs =()=> {
           onChange={handleChange}
           variant="scrollable"
           scrollButtons="on"
-          indicatorColor="secondary"
-          textColor="secondary"
-          aria-label="scrollable force tabs example"
-        >
-          <Tab label="General" icon={<HomeIcon />} {...a11yProps(0)} />
-          <Tab label="Tech" icon={<ImportantDevicesIcon />} {...a11yProps(1)} />
-          <Tab label="Game" icon={<SportsEsportsIcon />} {...a11yProps(2)} />
-          <Tab label="Tutorials" icon={<HelpIcon />} {...a11yProps(3)} />
-          <Tab label="Marketplace" icon={<ShoppingBasket />} {...a11yProps(4)} />
-          <Tab label="Item Six" icon={<ThumbDown />} {...a11yProps(5)} />
-          <Tab label="Item Seven" icon={<ThumbUp />} {...a11yProps(6)} />
+          style={{
+            color: "white",
+            backgroundColor: "#000000a6",
+            borderRadius: "6px 6px 0px 0px",
+            boxShadow:"0px 10px 13px -0px #000000"
+          }}>
+          <Tab
+            label="General"
+            className={classes.tabStyle}
+            icon={<HomeIcon />}
+            {...a11yProps(0)}
+          />
+          <Tab
+            label="Tech"
+            className={classes.tabStyle}
+            icon={<ImportantDevicesIcon />}
+            {...a11yProps(1)}
+          />
+          <Tab
+            label="Game"
+            className={classes.tabStyle}
+            icon={<SportsEsportsIcon />}
+            {...a11yProps(2)}
+          />
+          <Tab
+            label="Tutorials"
+            className={classes.tabStyle}
+            icon={<HelpIcon />}
+            {...a11yProps(3)}
+          />
+          <Tab
+            label="Marketplace"
+            className={classes.tabStyle}
+            icon={<ShoppingBasket />}
+            {...a11yProps(4)}
+          />
+          <Tab
+            label="Item Six"
+            className={classes.tabStyle}
+            icon={<ThumbDown />}
+            {...a11yProps(5)}
+          />
+          <Tab
+            label="Item Seven"
+            className={classes.tabStyle}
+            icon={<ThumbUp />}
+            {...a11yProps(6)}
+          />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -115,5 +163,5 @@ const CategoryTabs =()=> {
       </TabPanel>
     </div>
   );
-}
-export default CategoryTabs
+};
+export default CategoryTabs;

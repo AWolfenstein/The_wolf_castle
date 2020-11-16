@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     height: "700px",
     backgroundColor: "#181834cf",
     borderRadius: " 10px ",
-    boxShadow: "0px 0px 16px 2px rgba(59,12,236,0.8);",
+    boxShadow: "0px 0px 16px 2px #3b0cec",
   },
   deletePrimary: {
     backgroundColor: "rgba(0, 0, 0, 0.1)",
@@ -27,15 +27,15 @@ const GlobalContainer = () => {
     <Container children className={classes.gCont}>
       <div style={{ height: "1px" }}></div>
       <Breadcrumb></Breadcrumb>
-      <Grid item xs={12}>
-        <Grid container className={classes.centerContainer} justify="center"  spacing={2}   >
-          <Grid item>
+      <Grid item xs={12} md={12}>
+        <Grid container className={classes.centerContainer}  spacing={2}   >
+          <Grid item xs={2} md={2}>
             <LeftHomeBlock></LeftHomeBlock>
           </Grid>
-          <Grid item>
+          <Grid item xs={8} md={8}>
             <CategoryTabs></CategoryTabs>
           </Grid>
-          <Grid item>
+          <Grid item xs={2} md={2}>
             <RightHomeBlock></RightHomeBlock>
           </Grid>
         </Grid>
