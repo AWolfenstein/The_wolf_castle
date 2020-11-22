@@ -12,9 +12,9 @@ import ShoppingBasket from "@material-ui/icons/ShoppingBasket";
 import SportsEsportsIcon from "@material-ui/icons/SportsEsports";
 import ThumbDown from "@material-ui/icons/ThumbDown";
 import ThumbUp from "@material-ui/icons/ThumbUp";
-import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import ImportantDevicesIcon from "@material-ui/icons/ImportantDevices";
+import CategoryList from "../CategoryList/CategoryList";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -54,7 +54,7 @@ function TabPanel(props) {
             {...other}>
             {value === index && (
                 <Box p={3}>
-                    <Typography>{children}</Typography>
+                    {children}
                 </Box>
             )}
         </div>
@@ -141,7 +141,7 @@ const CategoryTabs = ({t}) => {
                 </Tabs>
             </AppBar>
             <TabPanel value={value} index={0}>
-                Item One
+                <CategoryList></CategoryList>
             </TabPanel>
             <TabPanel value={value} index={1}>
                 Item Two
@@ -154,7 +154,7 @@ const CategoryTabs = ({t}) => {
             </TabPanel>
             <TabPanel value={value} index={4}>
                 Item Five fsfsf
-            
+
 
             </TabPanel>
             <TabPanel value={value} index={5}>

@@ -1,11 +1,16 @@
 {
-    "theWolfCastle":"The Wolf Castle",
-    "login":"Login",
-    "home":"Home",
-    "general":"General",
-    "tech":"Tech",
-    "games":"Games",
-    "tutorials":"Tutorials",
-    "marketplace":"Marketplace"
-
+  "theWolfCastle": "The Wolf Castle",
+  "login": "Login",
+  "home": "Home",
+  "general": "General",
+  "tech": "Tech",
+  "games": "Games",
+  "tutorials": "Tutorials",
+  "marketplace": "Marketplace",
+  "activeUsers": "Online Users",
+  "statisticsForum": "Forum statistics",
+  "sharePage": "Share this page",
+  "threads": "Threads",
+  "posts": "Posts",
+  "users": "Users"
 }
