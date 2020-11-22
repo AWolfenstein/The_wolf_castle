@@ -31,7 +31,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7681a44-eff5-4b5d-ae3d-a2579ec082fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/AdsBlock/AdsBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AdsBlock/AdsBlock.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/LoginModal/LoginModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Layout/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Layout/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavBar/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavBar/NavBar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +48,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -72,6 +76,18 @@
     <property name="run.prettier.on.save" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JSP" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="run Front" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -115,14 +131,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="code_color" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="734" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605614267119">
+    <state x="734" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606065496219">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="734" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1605614267119" />
-    <state x="860" y="255" key="IDE.errors.dialog" timestamp="1605612704792">
+    <state x="734" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1606065496219" />
+    <state width="1379" height="434" key="GridCell.Tab.0.bottom" timestamp="1606065517478">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="860" y="255" key="IDE.errors.dialog/0.0.2560.1040@0.0.2560.1040" timestamp="1605612704792" />
+    <state width="1379" height="434" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1606065517478" />
+    <state width="1379" height="434" key="GridCell.Tab.0.center" timestamp="1606065517478">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1379" height="434" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1606065517478" />
+    <state width="1379" height="434" key="GridCell.Tab.0.left" timestamp="1606065517478">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1379" height="434" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1606065517478" />
+    <state width="1379" height="434" key="GridCell.Tab.0.right" timestamp="1606065517478">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1379" height="434" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1606065517478" />
+    <state x="860" y="255" key="IDE.errors.dialog" timestamp="1606057665509">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="860" y="255" key="IDE.errors.dialog/0.0.2560.1040@0.0.2560.1040" timestamp="1606057665509" />
+    <state x="496" y="89" key="MergeDialog" timestamp="1606065435349">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="496" y="89" key="MergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1606065435349" />
     <state x="1173" y="102" width="1299" height="843" key="SettingsEditor" timestamp="1605615426928">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -131,5 +167,9 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="872" y="234" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1605615631483" />
+    <state x="1676" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606065273407">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1676" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040@0.0.2560.1040" timestamp="1606065273407" />
   </component>
 </project>

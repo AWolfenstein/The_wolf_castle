@@ -35,9 +35,11 @@ const useStyles = makeStyles(() => ({
     },
 }));
 
-const NavBar = ({t, successSnackbar}) => {
+const NavBar = ({t, setOpen}) => {
     const classes = useStyles();
-
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
     return (
         <div className={classes.root}>
             <AppBar
@@ -57,9 +59,9 @@ const NavBar = ({t, successSnackbar}) => {
                     <div className={classes.rightButtons}>
                         <Button
                             color="inherit"
-                            onClick={() => {
-                                return successSnackbar('SUCCESS');
-                            }}
+                            onClick={
+                                handleClickOpen
+                            }
                         >
                             {t('login')}
                         </Button>
