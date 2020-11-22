@@ -1,0 +1,32 @@
+import React, { Fragment } from 'react';
+import { Redirect, useHistory } from 'react-router-dom';
+
+import { getFromStorage } from '../../helpers/storage';
+
+import * as L from './styles';
+import { Box } from '@material-ui/core';
+
+export const BaseLayout = (props) => {
+  const history = useHistory();
+  const authToken = 'authenticationToken'; 
+  // get from local storage ALEXEY PIDOR
+
+  if (!authToken) {
+    return (
+      <Redirect
+        to={{
+          pathname: '/auth/signin',
+          state: { from: history.location },
+        }}
+      />
+    );
+  }
+
+  return (
+    <Fragment>
+      <Box overflow="auto" marginTop="64px">
+        <L.MainContainer fixed>{props.children}</L.MainContainer>
+      </Box>
+    </Fragment>
+  );
+};
