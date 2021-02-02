@@ -31,10 +31,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7681a44-eff5-4b5d-ae3d-a2579ec082fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/LoginModal/LoginModal.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/conf.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/conf.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/saveactions_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Layout/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Layout/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavBar/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavBar/NavBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Layout/base/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Layout/base/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/AdsBlock/AdsBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AdsBlock/AdsBlock.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/LoginModal/LoginModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LoginModal/LoginModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/configureStore.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,15 +66,19 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1kPpveCqdSa13Qrsf5hSF0K9SA4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -73,9 +86,19 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettier.files.pattern" value="{**/*,*}.{js,ts,jsx,tsx,css,scss,sass}" />
     <property name="run.prettier.on.save" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JSP" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\The_wolf_castle\backend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\The_wolf_castle\frontend" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="run Front" type="js.build_tools.npm">
@@ -90,6 +113,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d7681a44-eff5-4b5d-ae3d-a2579ec082fe" name="Default Changelist" comment="" />
@@ -100,6 +126,18 @@
       <workItem from="1605612314373" duration="356000" />
       <workItem from="1605612682549" duration="2345000" />
       <workItem from="1605615060467" duration="629000" />
+      <workItem from="1606135023352" duration="1204000" />
+      <workItem from="1606218900280" duration="1346000" />
+      <workItem from="1606310696001" duration="1225000" />
+      <workItem from="1607008166693" duration="17000" />
+      <workItem from="1607021271884" duration="1184000" />
+      <workItem from="1608625489874" duration="45000" />
+      <workItem from="1608625544571" duration="23000" />
+      <workItem from="1611738423386" duration="103000" />
+      <workItem from="1611738536034" duration="95000" />
+      <workItem from="1611738642192" duration="94000" />
+      <workItem from="1611739152246" duration="845000" />
+      <workItem from="1612266945125" duration="1504000" />
     </task>
     <task id="LOCAL-00001" summary="code_color">
       <created>1605615612999</created>
@@ -108,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605615612999</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add_login_modal">
+      <created>1606065826532</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606065826532</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,30 +172,42 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="code_color" />
-    <option name="LAST_COMMIT_MESSAGE" value="code_color" />
+    <MESSAGE value="add_login_modal" />
+    <MESSAGE value="rebirth" />
+    <option name="LAST_COMMIT_MESSAGE" value="rebirth" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="745" y="375" key="#Custom_Plugin_Repositories" timestamp="1611738482211">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="745" y="375" key="#Custom_Plugin_Repositories/0.0.1920.1040@0.0.1920.1040" timestamp="1611738482211" />
     <state x="734" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606065496219">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="734" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1606065496219" />
-    <state width="1379" height="434" key="GridCell.Tab.0.bottom" timestamp="1606065517478">
+    <state x="1143" y="317" key="FileChooserDialogImpl" timestamp="1612267078316">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1379" height="434" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1606065517478" />
-    <state width="1379" height="434" key="GridCell.Tab.0.center" timestamp="1606065517478">
+    <state x="857" y="317" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611740186271" />
+    <state x="1143" y="317" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1612267078316" />
+    <state width="1625" height="206" key="GridCell.Tab.0.bottom" timestamp="1607024071151">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1379" height="434" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1606065517478" />
-    <state width="1379" height="434" key="GridCell.Tab.0.left" timestamp="1606065517478">
+    <state width="1625" height="206" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1607024071151" />
+    <state width="1625" height="206" key="GridCell.Tab.0.center" timestamp="1607024071151">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1379" height="434" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1606065517478" />
-    <state width="1379" height="434" key="GridCell.Tab.0.right" timestamp="1606065517478">
+    <state width="1625" height="206" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1607024071151" />
+    <state width="1625" height="206" key="GridCell.Tab.0.left" timestamp="1607024071151">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1379" height="434" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1606065517478" />
+    <state width="1625" height="206" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1607024071151" />
+    <state width="1625" height="206" key="GridCell.Tab.0.right" timestamp="1607024071151">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1625" height="206" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1607024071151" />
     <state x="860" y="255" key="IDE.errors.dialog" timestamp="1606057665509">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -159,14 +216,15 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="496" y="89" key="MergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1606065435349" />
-    <state x="1173" y="102" width="1299" height="843" key="SettingsEditor" timestamp="1605615426928">
+    <state x="1173" y="102" width="1299" height="843" key="SettingsEditor" timestamp="1612268088626">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1173" y="102" width="1299" height="843" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1605615426928" />
-    <state x="872" y="234" key="Vcs.Push.Dialog.v2" timestamp="1605615631483">
+    <state x="378" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611738567454" />
+    <state x="1173" y="102" width="1299" height="843" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1612268088626" />
+    <state x="872" y="234" key="Vcs.Push.Dialog.v2" timestamp="1606065831784">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="872" y="234" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1605615631483" />
+    <state x="872" y="234" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1606065831784" />
     <state x="1676" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606065273407">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

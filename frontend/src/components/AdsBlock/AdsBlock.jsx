@@ -12,12 +12,9 @@ const useStyles = makeStyles(() => ({
 }));
 const AdsBlock = () => {
     const classes = useStyles();
-    const body = (
-        <Container children className={classes.container}>
-            fdesfc
-        </Container>//test commit
-    );
-    return body;
+    return <Container children className={classes.container}>
+        fdesfc
+    </Container>;
 };
 
 export default AdsBlock;

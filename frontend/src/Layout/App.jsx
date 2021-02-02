@@ -6,7 +6,6 @@ import {Container, Grid} from '@material-ui/core';
 import NotFound from '../components/NotFound/NotFound';
 import NavBar from '../components/NavBar/NavBar';
 import AdsBlock from '../components/AdsBlock/AdsBlock';
-import GlobalContainer from '../components/GlobalContainer/GlobalContainer';
 import Footer from '../components/Footer/Footer';
 import LoginModal from "../components/LoginModal/LoginModal";
 import AuthLayoutRoutes from './authLayoutRoutes';
