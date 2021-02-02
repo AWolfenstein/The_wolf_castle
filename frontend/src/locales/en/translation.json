@@ -12,5 +12,13 @@
   "sharePage": "Share this page",
   "threads": "Threads",
   "posts": "Posts",
-  "users": "Users"
+  "users": "Users",
+  "signIn": {
+    "login": "Login or Email",
+    "password": "Password",
+    "remember": "Remember Me",
+    "forgot": "Forgot password?",
+    "signIn": "Sign In",
+    "signUp": "Don't have an account? Sign Up"
+  }
 }

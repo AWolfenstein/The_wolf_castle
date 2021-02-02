@@ -10,6 +10,7 @@ import Footer from '../components/Footer/Footer';
 import LoginModal from "../components/LoginModal/LoginModal";
 import AuthLayoutRoutes from './authLayoutRoutes';
 import BaseLayoutRoutes from './baseLayoutRoutes';
+import GlobalContainer from "../components/GlobalContainer/GlobalContainer";
 
 export const history = createBrowserHistory();
 

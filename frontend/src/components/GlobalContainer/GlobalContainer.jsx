@@ -6,7 +6,7 @@ import LeftHomeBlock from '../LeftHomeBlock/LeftHomeBlock';
 import RightHomeBlock from '../RightHomeBlock/RightHomeBlock';
 import CategoryTabs from '../CategoryTabs/CategoryTabs';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     gCont: {
         marginTop: '1%',
         marginBottom: '1%',
@@ -24,26 +24,25 @@ const useStyles = makeStyles((theme) => ({
 }));
 const GlobalContainer = () => {
     const classes = useStyles();
-    const body = (
-        <Container className={classes.gCont}>
-            <div style={{height: '1px'}}></div>
-            <Breadcrumb></Breadcrumb>
-            <Grid item xs={12} md={12}>
-                <Grid container className={classes.centerContainer} spacing={2}>
-                    <Grid item xs={2} md={2}>
-                        <LeftHomeBlock></LeftHomeBlock>
-                    </Grid>
-                    <Grid item xs={8} md={8}>
-                        <CategoryTabs></CategoryTabs>
-                    </Grid>
-                    <Grid item xs={2} md={2}>
-                        <RightHomeBlock></RightHomeBlock>
-                    </Grid>
+    return <Container className={classes.gCont}>
+        <div style={{height: '1px'}}/>
+        <Breadcrumb/>
+        <Grid item xs={12} md={12}>
+            <Grid container className={classes.centerContainer} spacing={2}>
+                <Grid item xs={2} md={2}>
+                    <LeftHomeBlock/>
+                </Grid>
+                <Grid item xs={8} md={8}>
+                    <CategoryTabs/>
+                </Grid>
+                <Grid item xs={2} md={2}>
+                    <RightHomeBlock/>
                 </Grid>
             </Grid>
-        </Container>
-    );
-    return body;
+        </Grid>
+    </Container>
+
+
 };
 
 export default GlobalContainer;

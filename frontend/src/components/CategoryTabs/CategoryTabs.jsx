@@ -16,7 +16,7 @@ import Box from "@material-ui/core/Box";
 import ImportantDevicesIcon from "@material-ui/icons/ImportantDevices";
 import CategoryList from "../CategoryList/CategoryList";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     root: {
         height: "600px",
         width: "100%",
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
 
 function TabPanel(props) {
     const {children, value, index, ...other} = props;
-    const classes = useStyles();
+    // const classes = useStyles();
     return (
         <div
             role="tabpanel"
@@ -141,7 +141,7 @@ const CategoryTabs = ({t}) => {
                 </Tabs>
             </AppBar>
             <TabPanel value={value} index={0}>
-                <CategoryList></CategoryList>
+                <CategoryList/>
             </TabPanel>
             <TabPanel value={value} index={1}>
                 Item Two
