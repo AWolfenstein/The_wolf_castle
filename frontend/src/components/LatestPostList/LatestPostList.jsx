@@ -13,7 +13,6 @@ import Divider from "@material-ui/core/Divider";
 const useStyles = makeStyles((theme) => ({
         root: {
             width: '100%',
-
         },
         smallAvatar: {
             width: theme.spacing(4),
@@ -120,7 +119,7 @@ const LatestPostList = () => {
                     secondary="by Jony Devidi Louren"/>
             </ListItem>
             <Divider className={classes.divider}/>
-          
+
         </List>
     );
 }

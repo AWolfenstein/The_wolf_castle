@@ -1,18 +1,25 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Paper } from "@material-ui/core";
+
 const useStyles = makeStyles(() => ({
   footer: {
-    height: "100px",
+    marginTop: "10%",
+    minHeight: "70px",
     backgroundColor: "currentColor",
+    textDecorationColor: "whitesmoke",
+    width: "100%",
   },
 }));
 const Footer = () => {
   const classes = useStyles();
-  const body = (
-    <Paper variant="outlined" square className={classes.footer}></Paper>
+  return (
+    <div>
+      <Paper fullWidth variant="outlined" square className={classes.footer}>
+        This text for footer
+      </Paper>
+    </div>
   );
-  return body;
 };
 
 export default Footer;

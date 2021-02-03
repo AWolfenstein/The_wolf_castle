@@ -7,9 +7,7 @@ import LatestPostList from "../LatestPostList/LatestPostList";
 const useStyles = makeStyles((theme) => ({
     paperBackground: {
         backgroundColor: "#00000052",
-
         boxShadow: "0px 0px 16px 2px #1beef370",
-        height: "600px",
         width: "100%",
     },
     paperHead: {
@@ -36,7 +34,7 @@ const RightHomeBlock = () => {
                 </div>
 
             </Paper>
-            <LatestPostList></LatestPostList>
+            <LatestPostList/>
         </Paper>
     );
     return body;

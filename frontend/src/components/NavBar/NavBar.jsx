@@ -55,7 +55,7 @@ const NavBar = ({t, setOpen}) => {
                     >
                         {t('theWolfCastle')}
                     </Link>
-                    <Typography variant="h6" className={classes.title}></Typography>
+                    <Typography variant="h6" className={classes.title}/>
                     <div className={classes.rightButtons}>
                         <Button
                             color="inherit"
