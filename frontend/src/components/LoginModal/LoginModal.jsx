@@ -157,7 +157,7 @@ const LoginModal = ({ t, open, setOpen }) => {
           <Typography component="h1" variant="h5">
             {t("signIn.signIn")}
           </Typography>
-          <form className={classes.form}>
+          <form id="loginModal" className={classes.form}>
             <Grid
               container
               spacing={2}

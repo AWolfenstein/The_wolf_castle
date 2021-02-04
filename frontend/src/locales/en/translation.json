@@ -20,5 +20,14 @@
     "forgot": "Forgot password?",
     "signIn": "Sign In",
     "signUp": "Don't have an account? Sign Up"
+  },
+  "register": {
+    "login": "Login",
+    "email": "Email",
+    "password": "Password",
+    "password2": "Retry password",
+    "agree": "Agree user terms",
+    "signUp": "Sign Up"
+
   }
 }

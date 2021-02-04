@@ -1,16 +1,15 @@
-import React, {Fragment} from 'react';
-import {Redirect, useHistory} from 'react-router-dom';
+import React, { Fragment } from "react";
+import { Redirect, useHistory } from "react-router-dom";
 
-import * as L from './styles';
-import {Box} from '@material-ui/core';
+import * as L from "./styles";
+import { Box } from "@material-ui/core";
 
 export const BaseLayout = (props) => {
-    const history = useHistory();
-    const authToken = 'authenticationToken';
-    // get from local storage 
-    
+  const history = useHistory();
+  const authToken = "authenticationToken";
+  // get from local storage
 
-    if (!authToken) {
+  /*if (!authToken) {
         return (
             <Redirect
                 to={{
@@ -19,13 +18,11 @@ export const BaseLayout = (props) => {
                 }}
             />
         );
-    }
+    }*/
 
-    return (
-        <Fragment>
-            <Box overflow="auto" marginTop="64px">
-                <L.MainContainer fixed>{props.children}</L.MainContainer>
-            </Box>
-        </Fragment>
-    );
+  return (
+    <Fragment>
+      <Box>{props.children}</Box>
+    </Fragment>
+  );
 };

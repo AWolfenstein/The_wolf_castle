@@ -31,27 +31,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7681a44-eff5-4b5d-ae3d-a2579ec082fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/RegisterPage/RegisterPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/images/18c07437491fd6eff52d5fafe8fc58b0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/images/ads.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/HomeContent/HomeContent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/constants/screenComstants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/customHook/hooks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/conf.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/conf.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Layout/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Layout/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Layout/base/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Layout/base/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/AdsBlock/AdsBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AdsBlock/AdsBlock.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/CategoryTabs/CategoryTabs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CategoryTabs/CategoryTabs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Breadcrumb/Breadcrumb.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Breadcrumb/Breadcrumb.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/GlobalContainer/GlobalContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/GlobalContainer/GlobalContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/LatestPostList/LatestPostList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LatestPostList/LatestPostList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/LeftHomeBlock/LeftHomeBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LeftHomeBlock/LeftHomeBlock.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/LoginModal/LoginModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LoginModal/LoginModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavBar/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavBar/NavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/PrevActiveUsers/PrevActiveUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/PrevActiveUsers/PrevActiveUsers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/RightHomeBlock/RightHomeBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/RightHomeBlock/RightHomeBlock.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/helpers/storage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/helpers/storage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/i18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/RegisterPage/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/RegisterPage/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/locales/en/translation.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +152,9 @@
       <workItem from="1612268881939" duration="18122000" />
       <workItem from="1612290726509" duration="3132000" />
       <workItem from="1612362512100" duration="14249000" />
-      <workItem from="1612378627591" duration="583000" />
+      <workItem from="1612378627591" duration="763000" />
+      <workItem from="1612424764513" duration="7772000" />
+      <workItem from="1612433998426" duration="7543000" />
     </task>
     <task id="LOCAL-00001" summary="code_color">
       <created>1605615612999</created>
@@ -188,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612287712772</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix_markup_grids">
+      <created>1612379353548</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1612379353548</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +215,8 @@
     <MESSAGE value="add_login_modal" />
     <MESSAGE value="rebirth" />
     <MESSAGE value="rectification_layout_LoginModal" />
-    <option name="LAST_COMMIT_MESSAGE" value="rectification_layout_LoginModal" />
+    <MESSAGE value="fix_markup_grids" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix_markup_grids" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

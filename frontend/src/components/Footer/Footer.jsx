@@ -15,7 +15,7 @@ const Footer = () => {
   const classes = useStyles();
   return (
     <div>
-      <Paper fullWidth variant="outlined" square className={classes.footer}>
+      <Paper variant="outlined" square className={classes.footer}>
         This text for footer
       </Paper>
     </div>
